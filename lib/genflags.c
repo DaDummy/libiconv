@@ -27,9 +27,9 @@
 #define USE_DOS
 #define USE_EXTRA
 
-struct loop_funcs {};
-struct iconv_fallbacks {};
-struct iconv_hooks {};
+struct loop_funcs {int placeholder;};
+struct iconv_fallbacks {int placeholder;};
+struct iconv_hooks {int placeholder;};
 #include "converters.h"
 
 static void emit_encoding (struct wctomb_funcs * ofuncs, const char* c_name)
